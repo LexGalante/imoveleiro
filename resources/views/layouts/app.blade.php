@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="pt-br">
 <head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('lib/materialize/dist/css/materialize.min.css') }}" media="screen,projection">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@yield('title')</title>    
 </head>
 <body>
     <div id="app">
+    	<script type="text/javascript" src="{{ asset('lib/jquery/dist/jquery.js') }}"></script>
+		<script src="{{ asset('lib/materialize/dist/js/materialize.min.js') }}"></script>
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -72,9 +72,9 @@
         </nav>
 
         @yield('content')
+        
+        <script src="{{asset('lib/jquery/dist/jquery.js')}}"></script>
+    	<script src="{{asset('lib/materialize/dist/js/materialize.js')}}"></script>
     </div>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
