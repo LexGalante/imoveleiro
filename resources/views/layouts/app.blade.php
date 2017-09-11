@@ -4,7 +4,6 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('lib/materialize/dist/css/materialize.min.css') }}" media="screen,projection">
     <link rel="stylesheet" href="{{ asset('css/sytle.css') }}">
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
@@ -31,9 +30,9 @@
             	</div>  	
         	</div>
         </nav>
-		<div class="container">	
+		<main>
         	@yield('content')
-        </div>	
+        </main>	
         
         <script src="{{asset('lib/jquery/dist/jquery.js')}}"></script>
     	<script src="{{asset('lib/materialize/dist/js/materialize.js')}}"></script>

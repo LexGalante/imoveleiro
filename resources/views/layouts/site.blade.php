@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('lib/materialize/dist/css/materialize.min.css') }}" media="screen,projection">
-    <link rel="stylesheet" href="{{ asset('css/sytle.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
@@ -22,7 +22,9 @@
     	
         @include('layouts._site._nav')
         
-        @yield('content')
+        <main style="flex: 1 0 auto;">
+        	@yield('content')
+        </main>	
         
         @include('layouts._site._footer')
     </div>
