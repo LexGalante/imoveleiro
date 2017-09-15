@@ -1,18 +1,15 @@
 $(document).ready(function(){
 	$(".button-collapse").sideNav();
-	$(".slider").slider({
-		full_width: true
-	});
+	$('.slider').slider({full_width: true});
+	$('select').material_select();
 });
 
-function sliderPrev()
-{
+function sliderPrev(){
 	$('.slider').slider('pause');
 	$('.slider').slider('prev');
 }
 
-function sliderNext()
-{
+function sliderNext(){
 	$('.slider').slider('pause');
 	$('.slider').slider('next');
 }

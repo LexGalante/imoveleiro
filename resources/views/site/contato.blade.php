@@ -1,30 +1,33 @@
 @extends('layouts.site')
 
 @section('content')
+
 <div class="container">
-	<div class="row section">
-		<h3 align="center">Contato</h3>
-	</div>
     <div class="row section">
-    	<div class="col s12 m8">
-    		<img alt="" class="responsive.img" src="{{ asset('img/mansao1.jpg') }}">
+    	<h3 align="center">Contato</h3>
+    	<div class="divider"></div>
+    </div>
+    <div class="row section">
+    	<div class="col s12 m7">
+    		<img class="responsive-img" src="{{ asset('img/modelo_img_home.jpg') }}">
     	</div>
-    	<div class="col s12 m4">
-    		<form action="">
+    	<div class="col s12 m5">
+    		<form class="col s12">
     			<div class="input-field">
-    				<label>Nome</label>
     				<input type="text" name="nome" class="validate">
+    				<label>Nome</label>
     			</div>
     			<div class="input-field">
+    				<input type="text" name="email" class="validate">
     				<label>E-mail</label>
-    				<input type="email" name="email" class="validate">
     			</div>
     			<div class="input-field">
+    				<textarea class="materialize-textarea"></textarea>
     				<label>Mensagem</label>
-    				<textarea rows="" cols="" class="materialize-textarea"></textarea>
     			</div>
-    			<button class="btn blue">Enviar</button>
+    			<button class="btn blue">Enviar</button>  			
     		</form>
+    		
     	</div>
     </div>
 </div>
