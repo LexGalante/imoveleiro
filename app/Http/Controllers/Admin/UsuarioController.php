@@ -101,7 +101,7 @@ class UsuarioController extends Controller
             unset($dados['password']);
         }
 
-        $usuario ->update($dados);
+        $usuario->update($dados);
         \Session::flash('mensagem',['msg'=>'Registro atualizado com sucesso!','class'=>'green white-text']);
 
         return redirect()->route('admin.usuarios');
